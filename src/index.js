@@ -5,10 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import SimpleReactLightbox from 'simple-react-lightbox'
 
 ReactDOM.render(
   <BrowserRouter>
+  <SimpleReactLightbox>
     <App />
+    </SimpleReactLightbox>
   </BrowserRouter>,
   document.getElementById('root')
 );
