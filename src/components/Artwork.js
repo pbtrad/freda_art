@@ -4,19 +4,28 @@ import { SRLWrapper } from "simple-react-lightbox";
 function GalleryBox() {
  return (
    <SRLWrapper>
-     <div>
-       <a className="img-fluid img-thumbnail" href="https://github.com/pbtrad/Freda-Art/blob/master/assets/images/ballet.jpg?raw=true">
-         <img className="img-fluid img-thumbnail" src="https://github.com/pbtrad/Freda-Art/blob/master/assets/images/ballet.jpg?raw=true" alt="lightbox" />
+     <div className="d-flex align-items-center">
+     <figure className="figure m-5">
+       <a className="img-fluid figure-img" href="https://github.com/pbtrad/Freda-Art/blob/master/assets/images/ballet.jpg?raw=true/400x300">
+         <img className="img-fluid figure-img" src="https://github.com/pbtrad/Freda-Art/blob/master/assets/images/ballet.jpg?raw=true/400x300" alt="lightbox" />
        </a>
-       <a className="img-fluid img-thumbnail" href="https://github.com/pbtrad/Freda-Art/blob/master/assets/images/beluga.jpg?raw=true">
-         <img className="img-fluid img-thumbnail" src="https://github.com/pbtrad/Freda-Art/blob/master/assets/images/beluga.jpg?raw=true" alt="lightbox1" />
+       </figure>
+       <figure className="figure m-5">
+       <a className="img-fluid figure-img" href="https://github.com/pbtrad/Freda-Art/blob/master/assets/images/ballet.jpg?raw=true">
+         <img className="img-fluid figure-img" src="https://github.com/pbtrad/Freda-Art/blob/master/assets/images/ballet.jpg?raw=true" alt="lightbox" />
        </a>
-       <a className="img-fluid img-thumbnail" href="https://github.com/pbtrad/Freda-Art/blob/master/assets/images/birdhouse.jpg?raw=true">
-         <img className="img-fluid img-thumbnail" src="https://github.com/pbtrad/Freda-Art/blob/master/assets/images/birdhouse.jpg?raw=true" alt="lightbox2" />
+       </figure>
+       <figure className="figure m-5">
+       <a className="img-fluid figure-img" href="https://github.com/pbtrad/Freda-Art/blob/master/assets/images/ballet.jpg?raw=true">
+         <img className="img-fluid figure-img" src="https://github.com/pbtrad/Freda-Art/blob/master/assets/images/ballet.jpg?raw=true" alt="lightbox" />
        </a>
-       <a className="img-fluid img-thumbnail" href="https://github.com/pbtrad/Freda-Art/blob/master/assets/images/cat-wth-pearl-earing.jpg?raw=true">
-         <img className="img-fluid img-thumbnail" src="https://github.com/pbtrad/Freda-Art/blob/master/assets/images/cat-wth-pearl-earing.jpg?raw=true" alt="lightbox3" />
+       </figure>
+       <figure className="figure m-5">
+       <a className="img-fluid figure-img" href="https://github.com/pbtrad/Freda-Art/blob/master/assets/images/ballet.jpg?raw=true">
+         <img className="img-fluid figure-img" src="https://github.com/pbtrad/Freda-Art/blob/master/assets/images/ballet.jpg?raw=true" alt="lightbox" />
        </a>
+       </figure>
+       
      </div>
    </SRLWrapper>
  );

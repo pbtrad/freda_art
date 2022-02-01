@@ -10,11 +10,11 @@ const Home = () => {
         <p>Artist</p>
       </div>
       <div className="head-btns">
-        <Link to="/about" className="btn btn-white">
-          <p className="btn-text">Know more about me</p>
+        <Link to="/about" className="btn btn-dark">
+          <p className="btn-text">About me</p>
         </Link>
-        <Link to="/contact" className="btn btn-transparent">
-          <p className="btn-text">Connect with me</p>
+        <Link to="/contact" className="btn btn-dark">
+          <p className="btn-text">Contact me</p>
         </Link>
       </div>
       <div className="splash-image"></div>
