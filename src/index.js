@@ -6,11 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SimpleReactLightbox from 'simple-react-lightbox'
+import Section from './App';
 
 ReactDOM.render(
   <BrowserRouter>
   <SimpleReactLightbox>
-    <App />
+    <Section />
     </SimpleReactLightbox>
   </BrowserRouter>,
   document.getElementById('root')
