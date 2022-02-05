@@ -7,9 +7,10 @@ import GalleryBox from "./components/Artwork/Artwork";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
 import Landing from "./components/Home/Landing";
-import * as Scroll from 'react-scroll';
+import * as Scroll from "react-scroll";
 import Main from "./components/Main";
-import {Routes as Switch, Route} from 'react-router-dom';
+import { Routes as Switch, Route } from "react-router-dom";
+import { Navbar, Container, Offcanvas, Nav, NavDropdown, Form, FormControl, Button } from "react-bootstrap";
 
 import {
   Link,
@@ -18,14 +19,14 @@ import {
   Events,
   animateScroll,
   scrollSpy,
-  scroller
+  scroller,
 } from "react-scroll";
 
-const durationFn = function(deltaTop) {
+const durationFn = function (deltaTop) {
   return deltaTop;
 };
 
-let scroll    = Scroll.animateScroll;
+let scroll = Scroll.animateScroll;
 
 class Section extends React.Component {
   constructor(props) {
@@ -34,11 +35,11 @@ class Section extends React.Component {
   }
 
   componentDidMount() {
-    Events.scrollEvent.register("begin", function() {
+    Events.scrollEvent.register("begin", function () {
       console.log("begin", arguments);
     });
 
-    Events.scrollEvent.register("end", function() {
+    Events.scrollEvent.register("end", function () {
       console.log("end", arguments);
     });
   }
@@ -50,7 +51,7 @@ class Section extends React.Component {
       duration: 800,
       delay: 0,
       smooth: "easeInOutQuart",
-      offset: offset
+      offset: offset,
     });
   }
   scrollToWithContainer() {
@@ -63,7 +64,7 @@ class Section extends React.Component {
       scroller.scrollTo("scroll-container", {
         duration: 800,
         delay: 0,
-        smooth: "easeInOutQuart"
+        smooth: "easeInOutQuart",
       });
     });
 
@@ -73,7 +74,7 @@ class Section extends React.Component {
         delay: 0,
         smooth: "easeInOutQuart",
         containerId: "scroll-container",
-        offset: 50
+        offset: 50,
       })
     );
   }
@@ -84,235 +85,33 @@ class Section extends React.Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-default navbar-dark h-100 navbar-fixed-top">
-          <div className="container-fluid">
-            <div
-              className="collapse navbar-collapse"
-              id="bs-example-navbar-collapse-1"
-            >
-              <ul className="nav navbar-nav">
-                <li>
-                  <Link
-                    activeClass="active"
-                    className="test1"
-                    to="test1"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={50}
-                  >
-                    Test 1
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    activeClass="active"
-                    className="test2"
-                    to="test2"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-55}
-                  >
-                    Test 2
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    activeClass="active"
-                    className="test3"
-                    to="test3"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                  >
-                    Test 3
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    activeClass="active"
-                    className="test4"
-                    to="test4"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                  >
-                    Test 4
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    activeClass="active"
-                    className="test5"
-                    to="test5"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    delay={1000}
-                  >
-                    Test 5 ( delay )
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    activeClass="active"
-                    className="test6"
-                    to="anchor"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                  >
-                    Test 6 (anchor)
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    activeClass="active"
-                    className="test7"
-                    to="test7"
-                    spy={true}
-                    smooth={true}
-                    duration={durationFn}
-                  >
-                    Test 7 (duration and container)
-                  </Link>
-                </li>
-                <li>
-                  {" "}
-                  <a onClick={() => animateScroll.scrollTo(100)}>
-                    Scroll To 100!
-                  </a>
-                </li>
-                <li>
-                  {" "}
-                  <a onClick={() => animateScroll.scrollToBottom()}>
-                    Scroll To Bottom
-                  </a>
-                </li>
-                <li>
-                  {" "}
-                  <a onClick={() => animateScroll.scrollMore(500)}>
-                    Scroll 500 More!
-                  </a>
-                </li>
-                <li>
-                  {" "}
-                  <a
-                    onClick={() =>
-                      animateScroll.scrollMore(1000, { delay: 1500 })
-                    }
-                  >
-                    Scroll 1000 More! ( delay ){" "}
-                  </a>
-                </li>
-                <li>
-                  <Link
-                    activeClass="active"
-                    className="test8"
-                    to="same"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                  >
-                    Same target
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    activeClass="active"
-                    className="test9"
-                    to="same"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                  >
-                    Same target
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    className="test1"
-                    to="test1"
-                    onClick={() => this.scrollTo()}
-                  >
-                    Scroll to element
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="test1"
-                    to="test1"
-                    onClick={() => this.scrollTo(-50)}
-                  >
-                    Scroll to element (offset -50)
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="test1"
-                    to="test1"
-                    onClick={() => this.scrollToWithContainer()}
-                  >
-                    Scroll to element within container
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <Header />
         <div>
           <Landing name="/home" id="home" className="element">
             test 1
           </Landing>
           <div id="about">
-        <About name="/about" className="element no-padding">
-          test 2
-        </About>
-        </div>
-   
-        <GalleryBox name="/artwork" id="artwork" className="element">
-          test 3
-        </GalleryBox>
-<div id="contact">
-        <Contact name="/contact" className="element">
-          test 4
-        </Contact>
-        </div>
-        <Footer name="test4" className="element">
-          test 4
-        </Footer>
-
-</div>
-       
-
-      
-
-        
-
-        
-
-        <Element
-          name="test7"
-          className="element"
-          id="containerElement"
-          style={{
-            position: "relative",
-            height: "200px",
-            overflow: "scroll",
-            marginBottom: "100px"
-          }}
-        >
+            <About name="/about" className="element no-padding">
+              test 2
+            </About>
+          </div>
+<div id="artwork">
+          <GalleryBox name="/artwork" id="artwork" className="element">
+            test 3
+          </GalleryBox>
+          </div>
+          <div id="contact">
+            <Contact name="/contact" className="element">
+              test 4
+            </Contact>
+          </div>
+          <Footer name="test4" className="element">
           
-
+          </Footer>
           
-        </Element>
+        </div>
 
         
-
-       
-
-        <a onClick={this.scrollToTop}>To the top!</a>
       </div>
     );
   }

@@ -1,3 +1,18 @@
+.about-container {
+    /*background: url('https://github.com/pbtrad/Freda-Art/blob/master/assets/images/sunset.jpg?raw=true');*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
 .about-main {
     display: flex;
     flex-direction: row;
