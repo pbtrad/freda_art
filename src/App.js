@@ -10,7 +10,16 @@ import Landing from "./components/Home/Landing";
 import * as Scroll from "react-scroll";
 import Main from "./components/Main";
 import { Routes as Switch, Route } from "react-router-dom";
-import { Navbar, Container, Offcanvas, Nav, NavDropdown, Form, FormControl, Button } from "react-bootstrap";
+import {
+  Navbar,
+  Container,
+  Offcanvas,
+  Nav,
+  NavDropdown,
+  Form,
+  FormControl,
+  Button,
+} from "react-bootstrap";
 
 import {
   Link,
@@ -95,23 +104,18 @@ class Section extends React.Component {
               test 2
             </About>
           </div>
-<div id="artwork">
-          <GalleryBox name="/artwork" id="artwork" className="element">
-            test 3
-          </GalleryBox>
+          <div id="artwork">
+            <GalleryBox name="/artwork" id="artwork" className="element">
+              test 3
+            </GalleryBox>
           </div>
           <div id="contact">
             <Contact name="/contact" className="element">
               test 4
             </Contact>
           </div>
-          <Footer name="test4" className="element">
-          
-          </Footer>
-          
+          <Footer name="test4" className="element"></Footer>
         </div>
-
-        
       </div>
     );
   }
