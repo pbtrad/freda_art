@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="contact-form-container mx-auto">
         <form
           className="contact-form"
-          action="https://formspree.io/f/xbjqbagr"
+          action="https://formspree.io/f/meqnazkv"
           method="POST"
         >
           {/* Email Id Input */}
@@ -38,7 +38,7 @@ const Contact = () => {
 
       <div className="social-icons-container">
         <a href="https://www.facebook.com/freda.hatch" className="social-icon">
-        <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/>
+        <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png" alt="facebook-icon"/>
         </a>
       </div>
 

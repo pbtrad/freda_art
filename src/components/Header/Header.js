@@ -5,9 +5,9 @@ import { Navbar, Nav, Offcanvas, Container } from "react-bootstrap";
 const Header = () => {
   return (
     <div>
-      <Navbar className="text-light" expand={false}>
+      <Navbar className="text-dark" expand={false}>
         <Container fluid>
-          <Navbar.Brand href="/">Freda Art</Navbar.Brand>
+          <Navbar.Brand className="" href="/">Freda Hatch</Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
             id="offcanvasNavbar"
@@ -17,7 +17,7 @@ const Header = () => {
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id="offcanvasNavbarLabel">
-                Freda Art
+                Freda Hatch
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>

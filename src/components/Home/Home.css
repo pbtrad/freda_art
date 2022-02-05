@@ -1,13 +1,11 @@
 .home-container {
-    background: url('https://github.com/pbtrad/Freda-Art/blob/master/assets/images/sunset.jpg?raw=true');
+    /*background: url('https://github.com/pbtrad/Freda-Art/blob/master/assets/images/sunset.jpg?raw=true');*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow-y: auto;
-    padding: 100px 10%;
 
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,6 +17,8 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    position: absolute;
+    top: 7rem;;
 }
 
 .header-text > h1 {

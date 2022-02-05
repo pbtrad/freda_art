@@ -1,5 +1,5 @@
 import Header from './Header/Header';
-import Home from './../Home/Home';
+import Home from './Home/Home';
 import Footer from './Footer';
 import {Routes as Switch, Route} from 'react-router-dom';
 import About from './About/About';

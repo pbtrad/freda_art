@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="header-text">
-        <h1>Freda Hatch</h1>
-        <p>Artist</p>
+        <h1 className="text-dark">Freda Hatch</h1>
+        <p className="text-dark">Artist</p>
       </div>
       <div className="head-btns">
         <Link to="/about" className="btn btn-dark">
