@@ -13,6 +13,8 @@
     box-sizing: border-box;
 }
 
+
+
 .header-text {
     display: flex;
     flex-direction: column;

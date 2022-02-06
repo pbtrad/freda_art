@@ -7,6 +7,7 @@ import GalleryBox from "./components/Artwork/Artwork";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
 import Landing from "./components/Home/Landing";
+import GoHome from "./components/GoHome/GoHome";
 import * as Scroll from "react-scroll";
 import Main from "./components/Main";
 import { Routes as Switch, Route } from "react-router-dom";
@@ -95,7 +96,7 @@ class Section extends React.Component {
     return (
       <div>
         <Header />
-        <div>
+        <div id="home">
           <Landing name="/home" id="home" className="element">
             test 1
           </Landing>
@@ -116,6 +117,7 @@ class Section extends React.Component {
           </div>
           <Footer name="test4" className="element"></Footer>
         </div>
+        <GoHome />
       </div>
     );
   }
