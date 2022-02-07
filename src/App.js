@@ -101,7 +101,7 @@ class Section extends React.Component {
             test 1
           </Landing>
           <div id="about">
-            <About name="/about" className="element no-padding">
+            <About name="/about" className="element">
               test 2
             </About>
           </div>

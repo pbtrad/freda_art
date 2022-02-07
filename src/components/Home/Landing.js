@@ -14,11 +14,11 @@ const Landing = () => {
         <img src={snow1} alt="snowscene" className="img-fluid"></img>
       </div>
       <div className="head-btns">
-        <a href="#about" className="btn btn-dark">
-          <p className="btn-text">About me</p>
+        <a href="#about" className="btn">
+          <p className="btn-text text-white">About me</p>
         </a>
-        <a href="#contact" className="btn btn-dark">
-          <p className="btn-text">Contact me</p>
+        <a href="#contact" className="btn">
+          <p className="btn-text text-white">Contact me</p>
         </a>
       </div>
       <div className="splash-image"></div>
